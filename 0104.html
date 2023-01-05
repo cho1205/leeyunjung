@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 20px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #555;
+        color: #000;
+    }
+
+    .title {
+        font-size: 1.5em;
+        color: #000;
+    }
+
+    .container {
+        margin-top: 35px;
+        position: relative;
+        min-width: 320px;
+    }
+
+    #navigationMenu li {
+        padding: 2px;
+        width: 40px;
+        height: 39px;
+    }
+
+    #navigationMenu li a {
+        display: block;
+        position: relative;
+        width: 38px;
+        height: 39px;
+        background: url(navigation.jpg); no-repeat;
+        transition: 0.3s;
+    }
+
+    #navigationMenu a:hover span {
+        padding: 0 20px;
+        width: auto;
+    }
+
+    #navigationMenu a:hover {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #navigationMenu span {
+        position: absolute;
+        padding: 0;
+        overflow: hidden;
+        left: 38px;
+        width: 0;
+        line-height: 39px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 0.875em;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    #navigationMenu .about {
+        background-position: -38px 0;
+    }
+
+    #navigationMenu .about:hover {
+        background-position: -38px -39px;
+    }
+
+    #navigationMenu .about span {
+        background: #7da315;
+        color: #3d4f0c;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">css3 Minimalistic Navigation</h1>
+        <div id="container">
+            <ul id="navigationMenu">
+                <li>
+                <a class="home" href="#"><span>HOME</span></a>    
+                <a class="about" href="#"><span>About</span></a> 
+                <a class="services" href="#"><span>Services</span></a> 
+                <a class="portfolio" href="#"><span>Portfolio</span></a> 
+                <a class="contact" href="#"><span>Contact us</span></a> 
+                </li>
+
+           </ul>
+           </div>
+</body>
+</html>
